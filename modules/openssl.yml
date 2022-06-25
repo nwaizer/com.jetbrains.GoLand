@@ -1,0 +1,12 @@
+---
+name: openssl
+buildsystem: simple
+build-commands:
+  - mkdir openssl
+  - tar xzfv openssl.tar.gz --directory=${FLATPAK_DEST}/ --strip-components=1
+  - install -T -Dm644 ${FLATPAK_DEST}/config ${FLATPAK_DEST}/configure
+sources:
+  - type: file
+    url: https://www.openssl.org/source/openssl-3.0.4.tar.gz
+    sha256: 2831843e9a668a0ab478e7020ad63d2d65e51f72977472dc73efcefbafc0c00f
+    dest-filename: openssl.tar.gz

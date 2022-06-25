@@ -1,0 +1,9 @@
+---
+name: zstd
+buildsystem: simple
+build-commands:
+  - make
+sources:
+  - type: git
+    url: https://github.com/facebook/zstd.git
+    tag: zstd-0.4.2

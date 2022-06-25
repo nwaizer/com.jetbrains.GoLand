@@ -18,6 +18,12 @@ finish-args:
   - --env=GOLAND_JDK=${FLATPAK_DEST}/goland/jbr/
   - --allow=devel
 modules:
+  - modules/xxhash.yml
+  - modules/rsync.yml
+  - modules/openssl.yml
+  - modules/lz4.yml
+  - modules/zstd.yml
+
   - name: goland
     buildsystem: simple
     build-commands:

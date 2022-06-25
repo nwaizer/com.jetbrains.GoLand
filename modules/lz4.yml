@@ -1,0 +1,9 @@
+---
+name: LZ4
+buildsystem: simple
+build-commands:
+  - make
+sources:
+  - type: git
+    url: https://github.com/lz4/lz4.git
+    tag: v1.9.3

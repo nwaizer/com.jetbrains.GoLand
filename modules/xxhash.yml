@@ -1,0 +1,9 @@
+---
+name: xxhash
+buildsystem: simple
+build-commands:
+  - make all
+sources:
+  - type: git
+    url: https://github.com/Cyan4973/xxHash.git
+    tag: v0.8.1
